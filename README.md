@@ -7,7 +7,7 @@ See [results/all.md](results/all.md) for the results as of `6.9-beta2-61113`.
 > [!NOTE]
 > The regression to Twenty Twenty's performance is expected since it is the only core theme unable to opt in to loading separate block styles on demand. The same goes for Astra, since it likewise does not add `wp-block-styles` theme support. See [Core-64166](https://core.trac.wordpress.org/ticket/64166).
 
-## [Gemini analysis](https://gemini.google.com/share/a95a0617d385)
+## [Gemini Analysis](https://gemini.google.com/share/a95a0617d385)
 
 A **negative percentage** indicates an **improvement** (faster rendering time), while a **positive percentage** indicates a **regression** (slower rendering time).
 
