@@ -89,7 +89,7 @@ See [Gemini analysis](https://gemini.google.com/share/a95a0617d385):
 > 15. **twentyseventeen:** +6.5%
 > 16. **twentyeleven:** +9.1%
 
-Note: The regression to Twenty Twenty's performance is expected since it is the only core theme unable to opt-in to loading separate block styles on demand. See [Core-64166](https://core.trac.wordpress.org/ticket/64166). 
+Note: The regression to Twenty Twenty's performance is expected since it is the only core theme unable to opt in to loading separate block styles on demand. The same goes for Astra, since it likewise does not add `wp-block-styles` theme support. See [Core-64166](https://core.trac.wordpress.org/ticket/64166).
 
 ## Installation
 
