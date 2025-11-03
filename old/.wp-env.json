@@ -1,0 +1,15 @@
+{
+	"core": null,
+	"port": 8880,
+	"testsPort": 8881,
+	"mappings": {
+		"wp-cli.yml": "../shared/wp-cli.yml"
+	},
+	"config": {
+		"WP_DEBUG": false,
+		"SCRIPT_DEBUG": false,
+		"SAVEQUERIES": false,
+		"DISABLE_WP_CRON": true,
+    "WP_ENVIRONMENT_TYPE": "production"
+	}
+}
