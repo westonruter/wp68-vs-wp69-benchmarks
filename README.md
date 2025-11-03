@@ -94,8 +94,8 @@ Note: The regression to Twenty Twenty's performance is expected since it is the 
 ## Installation
 
 1. Clone [GoogleChromeLabs/wpp-research](https://github.com/GoogleChromeLabs/wpp-research) somewhere on your machine.
-2. Clone this repo to a subdirectory of the `wpp-research` clone.
-3. Run `./benchmark.sh`.
+2. Clone this repo to a subdirectory of the `wpp-research` clone. For example, `cd wpp-research && git clone https://github.com/westonruter/wp68-vs-wp69-benchmarks.git`.
+3. Run `./benchmark.sh` in the checked out directory (e.g. `wp68-vs-wp69-benchmarks`).
 
 ## Credits
 
