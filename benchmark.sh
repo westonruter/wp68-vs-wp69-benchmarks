@@ -6,7 +6,7 @@ set -e
 
 OLD_VERSION="latest"
 NEW_VERSION="master"
-CWV_BENCHMARK_NUMBER=20
+CWV_BENCHMARK_NUMBER=100
 
 OLD_URL="http://localhost:8881"
 NEW_URL="http://localhost:8891"
@@ -131,13 +131,13 @@ for theme in "${THEMES[@]}"; do
 	echo "# $theme" >> results/all.md
 	echo >> results/all.md
 	echo "## Broadband" >> results/all.md
-	npm --silent run research -- benchmark-web-vitals --url="$old_test_url" --url="$new_test_url" --number="$CWV_BENCHMARK_NUMBER" --network-conditions='broadband' --diff --output=md | format_benchmark_table | tee "$results_file"
+	time npm --silent run research -- benchmark-web-vitals --url="$old_test_url" --url="$new_test_url" --number="$CWV_BENCHMARK_NUMBER" --network-conditions='broadband' --diff --output=md | format_benchmark_table | tee "$results_file"
 	cat "$results_file" >> results/all.md
 	echo >> results/all.md
 
 	results_file="results/$theme/fast-4g.md"
 	echo "## Fast 4G" >> results/all.md
-	npm --silent run research -- benchmark-web-vitals --url="$old_test_url" --url="$new_test_url" --number="$CWV_BENCHMARK_NUMBER" --network-conditions='Fast 4G' --diff --output=md | format_benchmark_table | tee "$results_file"
+	time npm --silent run research -- benchmark-web-vitals --url="$old_test_url" --url="$new_test_url" --number="$CWV_BENCHMARK_NUMBER" --network-conditions='Fast 4G' --diff --output=md | format_benchmark_table | tee "$results_file"
 	cat "$results_file" >> results/all.md
 	echo >> results/all.md
 done
