@@ -66,7 +66,8 @@ install_wordpress() {
 	fi
 
 	npm ci
-	npm run wp-env --silent start
+	npm run wp-env --silent start --update
+
 	if ! npm run wp-env --silent run tests-cli -- wp db import "$DATABASE_DUMP"; then
 		npm run wp-env --silent run tests-cli -- wp db reset --yes
 		npm run wp-env --silent run tests-cli -- wp core install --url="$url" --title="$dir" --admin_user=admin --admin_password=password --admin_email=wordpress@example.com --skip-email
