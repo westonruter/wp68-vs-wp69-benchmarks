@@ -5,8 +5,8 @@ set -e
 # Install wpp-research if missing
 
 OLD_VERSION="latest"
-NEW_VERSION="master"
-CWV_BENCHMARK_NUMBER=100
+NEW_VERSION="https://wordpress.org/wordpress-6.9-beta3.zip"
+CWV_BENCHMARK_NUMBER=50
 
 OLD_URL="http://localhost:8881"
 NEW_URL="http://localhost:8891"
