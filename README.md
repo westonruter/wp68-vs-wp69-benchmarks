@@ -4,12 +4,9 @@ This was quickly put together to benchmark all core themes plus some others in W
 
 See [results/all.md](results/all.md) for the results as of `6.9-beta3`.
 
-> [!NOTE]
-> The regression to Twenty Twenty's performance is expected since it is the only core theme unable to opt in to loading separate block styles on demand. The same goes for Astra, since it likewise does not add `wp-block-styles` theme support. See [Core-64166](https://core.trac.wordpress.org/ticket/64166).
-
 ## [Gemini Analysis](https://gemini.google.com/share/a95a0617d385)
 
-_Updated for 6.9-beta3._
+_Updated for 6.9-beta3. Note how now `twentytwenty` and `astra` now show improvements, whereas previously they were either regressed or had mixed results. This is due to [r61122](https://core.trac.wordpress.org/changeset/61122)._
 
 Here is the analysis of the new benchmark results (50 iterations) comparing WordPress 6.8 with 6.9-beta3.
 
