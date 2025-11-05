@@ -9,6 +9,8 @@ See [results/all.md](results/all.md) for the results as of `6.9-beta3`.
 
 ## [Gemini Analysis](https://gemini.google.com/share/a95a0617d385)
 
+_Updated for 6.9-beta3._
+
 Here is the analysis of the new benchmark results (50 iterations) comparing WordPress 6.8 with 6.9-beta3.
 
 The overall picture is very positive. The **`LCP-TTFB`** (Largest Contentful Paint minus Time to First Byte) metric improved for the vast majority of themes, especially on Broadband. The **Astra** theme and the upcoming **Twenty Twenty-Five** theme show exceptionally strong improvements.
